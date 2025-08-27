@@ -4,37 +4,37 @@
 
 Python Toolkit for EOS
 
-Full Pyeoskit project documentation can be found in [Modules](MODULES.md#pyeoskit-modules)
+Full Pyeoskit project documentation can be found in [Modules](MODULES.md#pyflonkit-modules)
 
-- [Pyeoskit Index](#pyeoskit-index)
+- [Pyeoskit Index](#pyflonkit-index)
 - [Latest Release](#latest-release)
 - [Installation](#installation)
-- [[Full List of Pyeoskit Project Modules.](https://learnforpractice.github.io/pyeoskit/#/MODULES?id=pyeoskit-modules)](#full-list-of-pyeoskit-project-moduleshttpslearnforpracticegithubiopyeoskitmodulesidpyeoskit-modules)
+- [Full List of Pyeoskit Project Modules.](https://github.com/fullon-labs/pyflonkit/tree/master/docs)
 - [Building from Source Code](#building-from-source-code)
         - [Installing Prerequisites](#installing-prerequisites)
         - [Downloading Source Code](#downloading-source-code)
         - [Installation](#installation)
-  - [Pyeoskit Modules](MODULES.md#pyeoskit-modules)
+  - [Pyeoskit Modules](MODULES.md#pyflonkit-modules)
 
 # Latest Release
 
-[pyeoskit v1.1.3](https://github.com/fullon-labs/pyflonkit/releases)
+[pyflonkit v1.1.3](https://github.com/fullon-labs/pyflonkit/releases)
 
 # Installation
 
 ```bash
 python3 -m pip install --upgrade pip
-python3 -m pip install pyeoskit
+python3 -m pip install pyflonkit
 ```
 
 On Windows platform:
 
 ```bash
 python -m pip install --upgrade pip
-python -m pip install pyeoskit
+python -m pip install pyflonkit
 ```
 
-# [Full List of Pyeoskit Project Modules.](https://learnforpractice.github.io/pyeoskit/#/MODULES?id=pyeoskit-modules)
+# [Full List of Pyeoskit Project Modules.](https://github.com/fullon-labs/pyflonkit/tree/master/docs)
 
 # Building from Source Code
 
@@ -65,8 +65,8 @@ cmd -k /path/to/gcc/mingwvars.bat
 ### Downloading Source Code
 
 ```
-git clone https://www.github.com/learnforpractice/pyeoskit
-cd pyeoskit
+git clone https://github.com/fullon-labs/pyflonkit
+cd pyflonkit
 git submodule update --init --recursive
 ```
 
@@ -89,13 +89,13 @@ python setup.py sdist bdist_wheel
 
 For Windows platform
 ```
-python -m pip uninstall pyeoskit -y;python -m pip install .\dist\pyeoskit-[SUFFIX].whl
+python -m pip uninstall pyflonkit -y;python -m pip install .\dist\pyflonkit-[SUFFIX].whl
 ```
 
 ### Example1
 ```python
 import os
-from pyeoskit import eosapi, wallet
+from pyflonkit import eosapi, wallet
 #import your account private key here
 wallet.import_key('mywallet', '5K463ynhZoCDDa4RDcr63cUwWLTnKqmdcoTKTHBjqoKfv4u5V7p')
 
@@ -115,8 +115,8 @@ eosapi.push_action('eosio.token', 'transfer', args, {'test1':'active'})
 ```python
 import os
 import asyncio
-from pyeoskit import wallet
-from pyeoskit.chainapi import ChainApiAsync
+from pyflonkit import wallet
+from pyflonkit.chainapi import ChainApiAsync
 
 #import your account private key here
 wallet.import_key('mywallet', '5K463ynhZoCDDa4RDcr63cUwWLTnKqmdcoTKTHBjqoKfv4u5V7p')
@@ -140,7 +140,7 @@ asyncio.run(test())
 ### Sign With Ledger Hardware Wallet Example
 ```python
 import os
-from pyeoskit import eosapi
+from pyflonkit import eosapi
 eosapi.set_node('https://eos.greymass.com')
 args = {
     'from': 'test1',

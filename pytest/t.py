@@ -4,7 +4,7 @@ import sys
 import json
 import subprocess
 import logging
-from pyeoskit import wallet, eosapi
+from pyflonkit import wallet, eosapi
 
 import httpx
 

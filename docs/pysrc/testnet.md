@@ -2,7 +2,7 @@
 
 > Auto-generated documentation for [pysrc.testnet](https://github.com/fullon-labs/pyflonkit/blob/master/pysrc/testnet.py) module.
 
-- [Pyeoskit](../README.md#pyeoskit-index) / [Modules](../MODULES.md#pyeoskit-modules) / [Pysrc](index.md#pysrc) / Testnet
+- [Pyeoskit](../README.md#pyflonkit-index) / [Modules](../MODULES.md#pyflonkit-modules) / [Pysrc](index.md#pysrc) / Testnet
     - [Testnet](#testnet)
         - [Testnet().cleanup](#testnetcleanup)
         - [Testnet().create_account](#testnetcreate_account)

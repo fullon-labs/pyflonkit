@@ -2,7 +2,7 @@
 
 > Auto-generated documentation for [pysrc.log](https://github.com/fullon-labs/pyflonkit/blob/master/pysrc/log.py) module.
 
-- [Pyeoskit](../README.md#pyeoskit-index) / [Modules](../MODULES.md#pyeoskit-modules) / [Pysrc](index.md#pysrc) / Log
+- [Pyeoskit](../README.md#pyflonkit-index) / [Modules](../MODULES.md#pyflonkit-modules) / [Pysrc](index.md#pysrc) / Log
     - [CustomFormatter](#customformatter)
         - [CustomFormatter().format](#customformatterformat)
     - [get_logger](#get_logger)

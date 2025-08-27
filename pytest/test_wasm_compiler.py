@@ -9,7 +9,7 @@ logger=logging.getLogger(__name__)
 test_dir = os.path.dirname(__file__)
 
 
-from pyeoskit import wasmcompiler
+from pyflonkit import wasmcompiler
 
 class Test(object):
 
@@ -45,7 +45,7 @@ using namespace eosio;
 CONTRACT hello: public contract {
 public:
     using contract::contract;
-    
+
     [[eosio::action]]
     void hi( name user) {
         require_auth(user);

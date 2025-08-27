@@ -2,7 +2,7 @@
 
 > Auto-generated documentation for [pysrc.compiler](https://github.com/fullon-labs/pyflonkit/blob/master/pysrc/compiler.py) module.
 
-- [Pyeoskit](../README.md#pyeoskit-index) / [Modules](../MODULES.md#pyeoskit-modules) / [Pysrc](index.md#pysrc) / Compiler
+- [Pyeoskit](../README.md#pyflonkit-index) / [Modules](../MODULES.md#pyflonkit-modules) / [Pysrc](index.md#pysrc) / Compiler
     - [cpp_compiler](#cpp_compiler)
         - [cpp_compiler().compile_cpp_file](#cpp_compilercompile_cpp_file)
     - [compile_cpp_file](#compile_cpp_file)

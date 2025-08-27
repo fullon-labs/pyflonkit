@@ -11,12 +11,12 @@ import hashlib
 import platform
 import subprocess
 
-from pyeoskit import config
-from pyeoskit import wallet
-from pyeoskit import utils
-from pyeoskit import eosapi
-from pyeoskit import log
-from pyeoskit.exceptions import ChainException
+from pyflonkit import config
+from pyflonkit import wallet
+from pyflonkit import utils
+from pyflonkit import eosapi
+from pyflonkit import log
+from pyflonkit.exceptions import ChainException
 
 logger = log.get_logger(__name__)
 
@@ -285,7 +285,7 @@ def apply(a, b, c):
         newaccount = {
             'creator': 'eosio',
             'name': '',
-            'owner': 
+            'owner':
             {
                 'threshold': 1,
                 'keys': [
@@ -297,7 +297,7 @@ def apply(a, b, c):
                 'accounts': [],
                 'waits': []
             },
-            'active': 
+            'active':
             {
                 'threshold': 1,
                 'keys': [
@@ -409,7 +409,7 @@ def apply(a, b, c):
             self.deploy_contract('eosio', 'eosio.bios')
         time.sleep(1.0)
         feature_digests = [
-            '1a99a59d87e06e09ec5b028a9cbb7749b4a5ad8819004365d02dc4379a8b7241', #ONLY_LINK_TO_EXISTING_PERMISSION' 
+            '1a99a59d87e06e09ec5b028a9cbb7749b4a5ad8819004365d02dc4379a8b7241', #ONLY_LINK_TO_EXISTING_PERMISSION'
             '2652f5f96006294109b3dd0bbde63693f55324af452b799ee137a81a905eed25', #'FORWARD_SETCODE'
             '299dcb6af692324b899b39f16d5a530a33062804e41f09dc97e9f156b4476707', #'WTMSIG_BLOCK_SIGNATURES'
             '35c2186cc36f7bb4aeaf4487b36e57039ccf45a9136aa856a5d569ecca55ef2b', #'GET_BLOCK_NUM'
@@ -429,7 +429,7 @@ def apply(a, b, c):
             'f0af56d2c5a48d60a4a5b5c903edfb7db3a736a94ed589d0b797df33ff9d3e1d', #'GET_SENDER'
         ]
 
-        for digest in feature_digests: 
+        for digest in feature_digests:
             try:
                 args = {'feature_digest': digest}
                 # logger.info(f'activate {digest}')

@@ -2,7 +2,7 @@
 
 > Auto-generated documentation for [pysrc.wasmcompiler](https://github.com/fullon-labs/pyflonkit/blob/master/pysrc/wasmcompiler.py) module.
 
-- [Pyeoskit](../README.md#pyeoskit-index) / [Modules](../MODULES.md#pyeoskit-modules) / [Pysrc](index.md#pysrc) / Wasmcompiler
+- [Pyeoskit](../README.md#pyflonkit-index) / [Modules](../MODULES.md#pyflonkit-modules) / [Pysrc](index.md#pysrc) / Wasmcompiler
     - [cpp_compiler](#cpp_compiler)
         - [cpp_compiler().compile_cpp_file](#cpp_compilercompile_cpp_file)
     - [go_compiler](#go_compiler)

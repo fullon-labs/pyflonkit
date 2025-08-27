@@ -1,7 +1,7 @@
 Python Toolkit for EOS
 
-[![PyPi](https://img.shields.io/pypi/v/pyeoskit.svg)](https://pypi.org/project/pyeoskit)
-[![PyPi](https://img.shields.io/pypi/dm/pyeoskit.svg)](https://pypi.org/project/pyeoskit)
+[![PyPi](https://img.shields.io/pypi/v/pyflonkit.svg)](https://pypi.org/project/pyflonkit)
+[![PyPi](https://img.shields.io/pypi/dm/pyflonkit.svg)](https://pypi.org/project/pyflonkit)
 
 # Installation
 
@@ -9,19 +9,19 @@ Python Toolkit for EOS
 
 ```bash
 python3 -m pip install -U pip
-python3 -m pip install pyeoskit
+python3 -m pip install pyflonkit
 ```
 
 ## On Windows platform:
 
 ```bash
 python -m pip install -U pip
-python -m pip install pyeoskit
+python -m pip install pyflonkit
 ```
 
 ## On Apple M1 hardware
 
-pyeoskit does not have pre-built versions available for ARM chips. in order to build it from source code, you need to install `cmake`, `go`, `scikit-build`, `cython`.
+pyflonkit does not have pre-built versions available for ARM chips. in order to build it from source code, you need to install `cmake`, `go`, `scikit-build`, `cython`.
 
 ```bash
 brew install go
@@ -30,7 +30,7 @@ xcode-select --install
 python3 -m pip install -U pip
 python3 -m pip install cmake
 python3 -m pip install scikit-build
-python3 -m pip install pyeoskit
+python3 -m pip install pyflonkit
 ```
 
 # Code Examples
@@ -38,7 +38,7 @@ python3 -m pip install pyeoskit
 ## Example1
 ```python
 import os
-from pyeoskit import eosapi, wallet
+from pyflonkit import eosapi, wallet
 #import your account private key here
 wallet.import_key('mywallet', '5K463ynhZoCDDa4RDcr63cUwWLTnKqmdcoTKTHBjqoKfv4u5V7p')
 
@@ -58,8 +58,8 @@ eosapi.push_action('eosio.token', 'transfer', args, {'test1':'active'})
 ```python
 import os
 import asyncio
-from pyeoskit import wallet
-from pyeoskit.chainapi import ChainApiAsync
+from pyflonkit import wallet
+from pyflonkit.chainapi import ChainApiAsync
 
 #import your account private key here
 wallet.import_key('mywallet', '5K463ynhZoCDDa4RDcr63cUwWLTnKqmdcoTKTHBjqoKfv4u5V7p')
@@ -83,7 +83,7 @@ asyncio.run(test())
 ## Sign With Ledger Hardware Wallet Example
 ```python
 import os
-from pyeoskit import eosapi
+from pyflonkit import eosapi
 eosapi.set_node('https://eos.greymass.com')
 args = {
     'from': 'test1',
@@ -99,7 +99,7 @@ eosapi.push_action('eosio.token', 'transfer', args, {'test1':'active'}, indices=
 
 
 
-# [Docs](https://learnforpractice.github.io/pyeoskit/#/MODULES?id=pyeoskit-modules)
+# [Docs](https://github.com/fullon-labs/pyflonkit/tree/master/docs)
 
 # Building from Source Code
 
@@ -130,8 +130,8 @@ cmd -k /path/to/gcc/mingwvars.bat
 ### Downloading Source Code
 
 ```
-git clone https://www.github.com/learnforpractice/pyeoskit
-cd pyeoskit
+git clone https://github.com/fullon-labs/pyflonkit
+cd pyflonkit
 git submodule update --init --recursive
 ```
 
@@ -153,7 +153,7 @@ python setup.py sdist bdist_wheel
 
 For Windows platform
 ```
-python -m pip uninstall pyeoskit -y;python -m pip install .\dist\pyeoskit-[SUFFIX].whl
+python -m pip uninstall pyflonkit -y;python -m pip install .\dist\pyflonkit-[SUFFIX].whl
 ```
 
 ### License

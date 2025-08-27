@@ -2,7 +2,7 @@
 
 > Auto-generated documentation for [pysrc.config](https://github.com/fullon-labs/pyflonkit/blob/master/pysrc/config.py) module.
 
-- [Pyeoskit](../README.md#pyeoskit-index) / [Modules](../MODULES.md#pyeoskit-modules) / [Pysrc](index.md#pysrc) / Config
+- [Pyeoskit](../README.md#pyflonkit-index) / [Modules](../MODULES.md#pyflonkit-modules) / [Pysrc](index.md#pysrc) / Config
     - [config_network](#config_network)
     - [set_nodes](#set_nodes)
     - [setup_eos_network](#setup_eos_network)

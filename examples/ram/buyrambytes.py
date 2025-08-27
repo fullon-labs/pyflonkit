@@ -1,4 +1,4 @@
-from pyeoskit import eosapi, wallet
+from pyflonkit import eosapi, wallet
 eosapi.set_node('https://api.eosn.io')
 
 #import your account private key here

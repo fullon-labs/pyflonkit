@@ -59,7 +59,7 @@ def setup_eos_network():
     main_token_contract = 'eosio.token'
     network_url = 'https://api.eosn.io'
     code_permission_name = 'eosio.code'
-    from pyeoskit import eosapi
+    from pyflonkit import eosapi
     eosapi.set_public_key_prefix(main_token)
 
 def setup_eos_test_network(url = 'https://api.testnet.eos.io', deploy_type=1):
@@ -72,7 +72,7 @@ def setup_eos_test_network(url = 'https://api.testnet.eos.io', deploy_type=1):
     global contract_deploy_type
 
     import os
-    from pyeoskit import eosapi, wallet
+    from pyflonkit import eosapi, wallet
 
     contract_deploy_type = deploy_type
     network_url = url

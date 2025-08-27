@@ -19,7 +19,7 @@
 *  limitations under the License.
 ********************************************************************************/
 
-- [Pyeoskit](../README.md#pyeoskit-index) / [Modules](../MODULES.md#pyeoskit-modules) / [Pysrc](index.md#pysrc) / Eosbase
+- [Pyeoskit](../README.md#pyflonkit-index) / [Modules](../MODULES.md#pyflonkit-modules) / [Pysrc](index.md#pysrc) / Eosbase
     - [Action](#action)
     - [Transaction](#transaction)
         - [Transaction.asset_to_number](#transactionasset_to_number)

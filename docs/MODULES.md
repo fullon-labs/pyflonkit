@@ -2,9 +2,9 @@
 
 > Auto-generated documentation modules index.
 
-Full list of [Pyeoskit](README.md#pyeoskit-index) project modules.
+Full list of [Pyeoskit](README.md#pyflonkit-index) project modules.
 
-- [Pyeoskit Index](README.md#pyeoskit-index)
+- [Pyeoskit Index](README.md#pyflonkit-index)
     - [Abi](pysrc/ABI.md#abi)
 - [Pysrc](pysrc/index.md#pysrc)
     - [Block Log](pysrc/block_log.md#block-log)

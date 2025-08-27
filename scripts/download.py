@@ -6,19 +6,19 @@ import hashlib
 
 version = sys.argv[1]
 files = [
- f'pyeoskit-{version}-cp311-cp311-manylinux_2_17_x86_64.manylinux2014_x86_64.whl',
- f'pyeoskit-{version}-cp310-cp310-manylinux_2_17_x86_64.manylinux2014_x86_64.whl',
- f'pyeoskit-{version}-cp310-cp310-win_amd64.whl',
- f'pyeoskit-{version}-cp310-cp310-macosx_10_15_x86_64.whl',
- f'pyeoskit-{version}-cp39-cp39-manylinux_2_17_x86_64.manylinux2014_x86_64.whl',
- f'pyeoskit-{version}-cp39-cp39-win_amd64.whl',
- f'pyeoskit-{version}-cp39-cp39-macosx_10_15_x86_64.whl',
- f'pyeoskit-{version}-cp38-cp38-manylinux_2_17_x86_64.manylinux2014_x86_64.whl',
- f'pyeoskit-{version}-cp38-cp38-win_amd64.whl',
- f'pyeoskit-{version}-cp38-cp38-macosx_10_15_x86_64.whl',
- f'pyeoskit-{version}-cp37-cp37m-manylinux_2_17_x86_64.manylinux2014_x86_64.whl',
- f'pyeoskit-{version}-cp37-cp37m-win_amd64.whl',
- f'pyeoskit-{version}-cp37-cp37m-macosx_10_15_x86_64.whl',
+ f'pyflonkit-{version}-cp311-cp311-manylinux_2_17_x86_64.manylinux2014_x86_64.whl',
+ f'pyflonkit-{version}-cp310-cp310-manylinux_2_17_x86_64.manylinux2014_x86_64.whl',
+ f'pyflonkit-{version}-cp310-cp310-win_amd64.whl',
+ f'pyflonkit-{version}-cp310-cp310-macosx_10_15_x86_64.whl',
+ f'pyflonkit-{version}-cp39-cp39-manylinux_2_17_x86_64.manylinux2014_x86_64.whl',
+ f'pyflonkit-{version}-cp39-cp39-win_amd64.whl',
+ f'pyflonkit-{version}-cp39-cp39-macosx_10_15_x86_64.whl',
+ f'pyflonkit-{version}-cp38-cp38-manylinux_2_17_x86_64.manylinux2014_x86_64.whl',
+ f'pyflonkit-{version}-cp38-cp38-win_amd64.whl',
+ f'pyflonkit-{version}-cp38-cp38-macosx_10_15_x86_64.whl',
+ f'pyflonkit-{version}-cp37-cp37m-manylinux_2_17_x86_64.manylinux2014_x86_64.whl',
+ f'pyflonkit-{version}-cp37-cp37m-win_amd64.whl',
+ f'pyflonkit-{version}-cp37-cp37m-macosx_10_15_x86_64.whl',
 ]
 
 url = f'https://github.com/fullon-labs/pyflonkit/releases/download/v{version}/'

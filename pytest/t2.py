@@ -1,12 +1,12 @@
 import json
-from pyeoskit import ABI
+from pyflonkit import ABI
 import logging
 
 logging.basicConfig(level=logging.INFO, format='%(asctime)s %(levelname)s %(lineno)d %(module)s %(message)s')
 logger=logging.getLogger(__name__)
 
-from pyeoskit import _pyeoskit
-_pyeoskit.init()
+from pyflonkit import _pyflonkit
+_pyflonkit.init()
 
 with open('data/eosio.token.abi', 'rb') as f:
     abi = f.read()

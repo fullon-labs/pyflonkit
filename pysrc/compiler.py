@@ -4,8 +4,8 @@ import shutil
 import hashlib
 import marshal
 import subprocess
-from pyeoskit import eosapi, wallet
-from pyeoskit import config
+from pyflonkit import eosapi, wallet
+from pyflonkit import config
 
 def run_test_code(code, abi='', account_name='helloworld11'):
     publish_contract(account_name, code, abi)
@@ -31,7 +31,7 @@ def set_code(account_name, code):
                "code":code.hex()
                }
     eosapi.push_action(config.system_contract, 'setcode', setcode, {account_name:'active'})
-    
+
     return True
 
 def find_eosio_cdt_path():

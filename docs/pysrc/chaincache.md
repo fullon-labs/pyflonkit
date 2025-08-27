@@ -2,7 +2,7 @@
 
 > Auto-generated documentation for [pysrc.chaincache](https://github.com/fullon-labs/pyflonkit/blob/master/pysrc/chaincache.py) module.
 
-- [Pyeoskit](../README.md#pyeoskit-index) / [Modules](../MODULES.md#pyeoskit-modules) / [Pysrc](index.md#pysrc) / ChainCache
+- [Pyeoskit](../README.md#pyflonkit-index) / [Modules](../MODULES.md#pyflonkit-modules) / [Pysrc](index.md#pysrc) / ChainCache
     - [ChainCache](#chaincache)
         - [ChainCache().get_abi](#chaincacheget_abi)
         - [ChainCache().get_account](#chaincacheget_account)

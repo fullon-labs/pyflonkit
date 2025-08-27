@@ -14,19 +14,19 @@ data = [
 ]
 
 if platform.system() == 'Windows':
-    data.append("pyeoskit.dll")
+    data.append("pyflonkit.dll")
 
 setup(
-    name="pyeoskit",
+    name="pyflonkit",
     version="1.1.12",
     description="Python Toolkit for EOS",
     author='learnforpractice',
     license="MIT",
     url="https://github.com/fullon-labs/pyflonkit",
-    packages=['pyeoskit'],
+    packages=['pyflonkit'],
     # The extra '/' was *only* added to check that scikit-build can handle it.
-    package_dir={'pyeoskit': 'pysrc'},
-    package_data={'pyeoskit': data},
+    package_dir={'pyflonkit': 'pysrc'},
+    package_data={'pyflonkit': data},
     install_requires=[
         'requests_unixsocket>=0.2.0',
         'httpx>=0.19.0',

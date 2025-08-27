@@ -2,7 +2,7 @@
 
 > Auto-generated documentation for [pysrc.exceptions](https://github.com/fullon-labs/pyflonkit/blob/master/pysrc/exceptions.py) module.
 
-- [Pyeoskit](../README.md#pyeoskit-index) / [Modules](../MODULES.md#pyeoskit-modules) / [Pysrc](index.md#pysrc) / Exceptions
+- [Pyeoskit](../README.md#pyflonkit-index) / [Modules](../MODULES.md#pyflonkit-modules) / [Pysrc](index.md#pysrc) / Exceptions
     - [ChainException](#chainexception)
     - [NoResponse](#noresponse)
     - [WalletException](#walletexception)

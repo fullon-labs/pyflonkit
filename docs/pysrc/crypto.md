@@ -2,7 +2,7 @@
 
 > Auto-generated documentation for [pysrc.crypto](https://github.com/fullon-labs/pyflonkit/blob/master/pysrc/crypto.py) module.
 
-- [Pyeoskit](../README.md#pyeoskit-index) / [Modules](../MODULES.md#pyeoskit-modules) / [Pysrc](index.md#pysrc) / Crypto
+- [Pyeoskit](../README.md#pyflonkit-index) / [Modules](../MODULES.md#pyflonkit-modules) / [Pysrc](index.md#pysrc) / Crypto
     - [create_key](#create_key)
 
 ## create_key

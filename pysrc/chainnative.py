@@ -2,7 +2,7 @@ import time
 import json
 import httpx
 
-from . import _pyeoskit
+from . import _pyflonkit
 from . import wasmcompiler
 from .exceptions import ChainException
 from . import ABI
@@ -16,12 +16,12 @@ SRC_TYPE_GO = 2
 
 class ChainNative(object):
     def __init__(self):
-        self._chain_index = _pyeoskit.new_chain_context()
+        self._chain_index = _pyflonkit.new_chain_context()
 
     def free(self):
         if self._chain_index == -1:
             return
-        _pyeoskit.chain_context_free(self._chain_index)
+        _pyflonkit.chain_context_free(self._chain_index)
         self._chain_index = -1
 
     @property
@@ -49,7 +49,7 @@ class ChainNative(object):
         '''convert integer to name string
         Example:
         ```python
-            from pyeoskit import eosapi
+            from pyflonkit import eosapi
             s = eosapi.n2s(10927537166380695552)
             print(s)
         ```
@@ -57,31 +57,31 @@ class ChainNative(object):
             'myname'
         ```
         '''
-        return _pyeoskit.n2s(n)
+        return _pyflonkit.n2s(n)
 
     @staticmethod
     def s2n(s):
-        n = _pyeoskit.s2n(s)
-        if not _pyeoskit.n2s(n) == s:
+        n = _pyflonkit.s2n(s)
+        if not _pyflonkit.n2s(n) == s:
             return 0
         return n
 
     @staticmethod
     def s2b(s):
-        n = _pyeoskit.s2n(s)
+        n = _pyflonkit.s2n(s)
         return int.to_bytes(n, 8, 'little')
 
     @staticmethod
     def b2s(b):
         n = int.from_bytes(b, 'little')
-        return _pyeoskit.n2s(n)
+        return _pyflonkit.n2s(n)
 
     @staticmethod
     def string_to_symbol(sym):
         try:
             precision, str_sym = sym.split(',')
             print('++++++++:', precision, str_sym)
-            return _pyeoskit.sym2n(str_sym, int(precision))
+            return _pyflonkit.sym2n(str_sym, int(precision))
         except Exception as e:
             print(e)
             return 0
@@ -197,19 +197,19 @@ class ChainNative(object):
 
     @staticmethod
     def get_public_key(priv, eos_pub = True):
-        ret = _pyeoskit.crypto_get_public_key(priv, eos_pub)
+        ret = _pyflonkit.crypto_get_public_key(priv, eos_pub)
         return check_result(ret)
 
     @staticmethod
     def recover_key(hex_digest, sign):
-        ret = _pyeoskit.crypto_recover_key(hex_digest, sign)
+        ret = _pyflonkit.crypto_recover_key(hex_digest, sign)
         return check_result(ret)
 
     @staticmethod
     def sign_digest(digest, priv_key):
         if isinstance(digest, bytes):
             digest = digest.hex()
-        ret = _pyeoskit.crypto_sign_digest(digest, priv_key)
+        ret = _pyflonkit.crypto_sign_digest(digest, priv_key)
         return check_result(ret)
 
     def mp_make_frozen(self, code):
@@ -254,8 +254,8 @@ class ChainNative(object):
 
     @staticmethod
     def set_debug_flag(debug):
-        _pyeoskit.set_debug_flag_(debug)
+        _pyflonkit.set_debug_flag_(debug)
 
     @staticmethod
     def get_debug_flag() -> bool:
-        return _pyeoskit.get_debug_flag_()
+        return _pyflonkit.get_debug_flag_()

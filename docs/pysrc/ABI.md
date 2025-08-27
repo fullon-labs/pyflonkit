@@ -2,7 +2,7 @@
 
 > Auto-generated documentation for [pysrc.ABI](https://github.com/fullon-labs/pyflonkit/blob/master/pysrc/ABI.py) module.
 
-- [Pyeoskit](../README.md#pyeoskit-index) / [Modules](../MODULES.md#pyeoskit-modules) / [Pysrc](index.md#pysrc) / Abi
+- [Pyeoskit](../README.md#pyflonkit-index) / [Modules](../MODULES.md#pyflonkit-modules) / [Pysrc](index.md#pysrc) / Abi
     - [is_abi_cached](#is_abi_cached)
     - [pack_abi](#pack_abi)
     - [pack_abi_type](#pack_abi_type)

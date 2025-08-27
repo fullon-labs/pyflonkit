@@ -19,7 +19,7 @@
 *  limitations under the License.
 ********************************************************************************/
 
-- [Pyeoskit](../README.md#pyeoskit-index) / [Modules](../MODULES.md#pyeoskit-modules) / [Pysrc](index.md#pysrc) / Ledger
+- [Pyeoskit](../README.md#pyflonkit-index) / [Modules](../MODULES.md#pyflonkit-modules) / [Pysrc](index.md#pysrc) / Ledger
     - [close_dongle](#close_dongle)
     - [get_dongle](#get_dongle)
     - [get_public_key](#get_public_key)

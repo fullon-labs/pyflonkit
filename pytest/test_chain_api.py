@@ -1,4 +1,4 @@
-from pyeoskit import eosapi
+from pyflonkit import eosapi
 
 info = eosapi.get_info()
 

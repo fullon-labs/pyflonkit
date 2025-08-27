@@ -2,7 +2,7 @@
 
 > Auto-generated documentation for [pysrc.chainapi_sync](https://github.com/fullon-labs/pyflonkit/blob/master/pysrc/chainapi_sync.py) module.
 
-- [Pyeoskit](../README.md#pyeoskit-index) / [Modules](../MODULES.md#pyeoskit-modules) / [Pysrc](index.md#pysrc) / Chainapi Sync
+- [Pyeoskit](../README.md#pyflonkit-index) / [Modules](../MODULES.md#pyflonkit-modules) / [Pysrc](index.md#pysrc) / Chainapi Sync
     - [ChainApi](#chainapi)
         - [ChainApi().create_account](#chainapicreate_account)
         - [ChainApi().deploy_abi](#chainapideploy_abi)

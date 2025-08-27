@@ -2,7 +2,7 @@
 
 > Auto-generated documentation for [pysrc.common](https://github.com/fullon-labs/pyflonkit/blob/master/pysrc/common.py) module.
 
-- [Pyeoskit](../README.md#pyeoskit-index) / [Modules](../MODULES.md#pyeoskit-modules) / [Pysrc](index.md#pysrc) / Common
+- [Pyeoskit](../README.md#pyflonkit-index) / [Modules](../MODULES.md#pyflonkit-modules) / [Pysrc](index.md#pysrc) / Common
     - [check_result](#check_result)
 
 ## check_result

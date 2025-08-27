@@ -1,3 +1,3 @@
 pushd dist
-python3 -m pip uninstall pyeoskit -y;python3 -m pip install ./pyeoskit-*.whl
+python3 -m pip uninstall pyflonkit -y;python3 -m pip install ./pyflonkit-*.whl
 popd

@@ -3,8 +3,8 @@ import sys
 
 root_path = sys.argv[1]
 
-def check_modification():   
-    lib_name = os.path.join(root_path, 'libpyeoskit.a')
+def check_modification():
+    lib_name = os.path.join(root_path, 'libpyflonkit.a')
     if not os.path.exists(lib_name):
         return True
     modify_time = os.path.getmtime(lib_name)

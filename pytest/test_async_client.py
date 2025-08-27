@@ -10,8 +10,8 @@ logger=logging.getLogger(__name__)
 test_dir = os.path.dirname(__file__)
 
 
-from pyeoskit.chainapi import ChainApiAsync
-from pyeoskit import wallet, config
+from pyflonkit.chainapi import ChainApiAsync
+from pyflonkit import wallet, config
 
 @pytest.fixture
 def event_loop():

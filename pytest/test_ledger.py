@@ -4,8 +4,8 @@ import time
 import pytest
 import logging
 import hashlib
-from pyeoskit import eosapi, config, wallet
-from pyeoskit.exceptions import ChainException, WalletException
+from pyflonkit import eosapi, config, wallet
+from pyflonkit.exceptions import ChainException, WalletException
 
 logging.basicConfig(level=logging.INFO, format='%(asctime)s %(levelname)s %(lineno)d %(module)s %(message)s')
 logger=logging.getLogger(__name__)
@@ -38,7 +38,7 @@ class Test(object):
         eosapi.push_action('eosio.token', 'transfer', args, {'helloworld11': 'active'}, indices=[0])
 
     def test_2ledger(self):
-        from pyeoskit import ledger
+        from pyflonkit import ledger
         for i in range(0, 1):
             print('+++++++++++:', i)
             pub = ledger.get_public_key(i)
@@ -62,14 +62,14 @@ class Test(object):
                     "data":"70d55697ae798d8a0000000000000038102700000000000004454f53000000000568656c6c6f"}
                 ],"transaction_extensions":[]
             }
-        
-        from pyeoskit.transaction import Transaction
+
+        from pyflonkit.transaction import Transaction
         t = Transaction.from_json(tx)
         logger.info("t.pack(): %s", t.pack())
         chain_id = 'aca376f206b8fc25a6ed44dbdc66547c36c6c33e3a119ffbeaef943642f0e906'
         digest = t.digest(chain_id)
         print(digest)
 
-        from pyeoskit import ledger
+        from pyflonkit import ledger
         ledger.sign(tx, [0], chain_id)
 

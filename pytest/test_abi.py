@@ -1,4 +1,4 @@
-from pyeoskit import eosapi
+from pyflonkit import eosapi
 def test_pack_unpack_array():
     abi = '''
     {

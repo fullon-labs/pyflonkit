@@ -2,7 +2,7 @@
 
 > Auto-generated documentation for [pysrc.wallet](https://github.com/fullon-labs/pyflonkit/blob/master/pysrc/wallet.py) module.
 
-- [Pyeoskit](../README.md#pyeoskit-index) / [Modules](../MODULES.md#pyeoskit-modules) / [Pysrc](index.md#pysrc) / Wallet
+- [Pyeoskit](../README.md#pyflonkit-index) / [Modules](../MODULES.md#pyflonkit-modules) / [Pysrc](index.md#pysrc) / Wallet
     - [check_result](#check_result)
     - [create](#create)
     - [get_public_keys](#get_public_keys)

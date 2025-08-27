@@ -2,7 +2,7 @@
 
 > Auto-generated documentation for [pysrc.chainnative](https://github.com/fullon-labs/pyflonkit/blob/master/pysrc/chainnative.py) module.
 
-- [Pyeoskit](../README.md#pyeoskit-index) / [Modules](../MODULES.md#pyeoskit-modules) / [Pysrc](index.md#pysrc) / ChainNative
+- [Pyeoskit](../README.md#pyflonkit-index) / [Modules](../MODULES.md#pyflonkit-modules) / [Pysrc](index.md#pysrc) / ChainNative
     - [ChainNative](#chainnative)
         - [ChainNative.b2s](#chainnativeb2s)
         - [ChainNative().check_abi](#chainnativecheck_abi)
@@ -172,7 +172,7 @@ convert integer to name string
 #### Examples
 
 ```python
-from pyeoskit import eosapi
+from pyflonkit import eosapi
 s = eosapi.n2s(10927537166380695552)
 print(s)
 ```

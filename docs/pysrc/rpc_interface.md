@@ -2,7 +2,7 @@
 
 > Auto-generated documentation for [pysrc.rpc_interface](https://github.com/fullon-labs/pyflonkit/blob/master/pysrc/rpc_interface.py) module.
 
-- [Pyeoskit](../README.md#pyeoskit-index) / [Modules](../MODULES.md#pyeoskit-modules) / [Pysrc](index.md#pysrc) / RPCInterface
+- [Pyeoskit](../README.md#pyflonkit-index) / [Modules](../MODULES.md#pyflonkit-modules) / [Pysrc](index.md#pysrc) / RPCInterface
     - [RPCInterface](#rpcinterface)
         - [RPCInterface().abi_bin_to_json](#rpcinterfaceabi_bin_to_json)
         - [RPCInterface().abi_json_to_bin](#rpcinterfaceabi_json_to_bin)

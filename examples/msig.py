@@ -1,6 +1,6 @@
 #multisig example
 
-from pyeoskit import eosapi, wallet
+from pyflonkit import eosapi, wallet
 #account to update authorization
 account = 'testaccount'
 #new permission key to add

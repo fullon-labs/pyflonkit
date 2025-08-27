@@ -2,7 +2,7 @@
 
 > Auto-generated documentation for [pysrc.test_helper](https://github.com/fullon-labs/pyflonkit/blob/master/pysrc/test_helper.py) module.
 
-- [Pyeoskit](../README.md#pyeoskit-index) / [Modules](../MODULES.md#pyeoskit-modules) / [Pysrc](index.md#pysrc) / Test Helper
+- [Pyeoskit](../README.md#pyflonkit-index) / [Modules](../MODULES.md#pyflonkit-modules) / [Pysrc](index.md#pysrc) / Test Helper
     - [config_network](#config_network)
     - [print_console](#print_console)
     - [run_test](#run_test)

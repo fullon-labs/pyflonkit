@@ -3,14 +3,14 @@ import sys
 import time
 import pytest
 import logging
-from pyeoskit import _pyeoskit
+from pyflonkit import _pyflonkit
 
 logging.basicConfig(level=logging.INFO, format='%(asctime)s %(levelname)s %(lineno)d %(module)s %(message)s')
 logger=logging.getLogger(__name__)
 test_dir = os.path.dirname(__file__)
 
 
-from pyeoskit.chainapi import ChainApi
+from pyflonkit.chainapi import ChainApi
 
 class Test(object):
 
@@ -34,9 +34,9 @@ class Test(object):
         logger.info(api.get_info())
 
     def test_api(self):
-        assert(_pyeoskit.n2s(_pyeoskit.s2n('zzzzzzzzzzzzj')) == 'zzzzzzzzzzzzj')
-        assert _pyeoskit.n2sym((_pyeoskit.sym2n('EOS', 4))) == '4,EOS'
-        from pyeoskit.chainnative import ChainNative
+        assert(_pyflonkit.n2s(_pyflonkit.s2n('zzzzzzzzzzzzj')) == 'zzzzzzzzzzzzj')
+        assert _pyflonkit.n2sym((_pyflonkit.sym2n('EOS', 4))) == '4,EOS'
+        from pyflonkit.chainnative import ChainNative
         c = ChainNative()
         n = c.string_to_symbol('4,EOS')
-        assert '4,EOS' == _pyeoskit.n2sym(n)
+        assert '4,EOS' == _pyflonkit.n2sym(n)

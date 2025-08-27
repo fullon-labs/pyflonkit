@@ -2,7 +2,7 @@
 
 > Auto-generated documentation for [pysrc.google_docstring](https://github.com/fullon-labs/pyflonkit/blob/master/pysrc/google_docstring.py) module.
 
-- [Pyeoskit](../README.md#pyeoskit-index) / [Modules](../MODULES.md#pyeoskit-modules) / [Pysrc](index.md#pysrc) / Google docstrings examples
+- [Pyeoskit](../README.md#pyflonkit-index) / [Modules](../MODULES.md#pyflonkit-modules) / [Pysrc](index.md#pysrc) / Google docstrings examples
     - [Links](#links)
     - [ClassExample](#classexample)
         - [ClassExample().method_example](#classexamplemethod_example)

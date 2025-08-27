@@ -2,7 +2,7 @@
 
 > Auto-generated documentation for [pysrc.utils](https://github.com/fullon-labs/pyflonkit/blob/master/pysrc/utils.py) module.
 
-- [Pyeoskit](../README.md#pyeoskit-index) / [Modules](../MODULES.md#pyeoskit-modules) / [Pysrc](index.md#pysrc) / Utils
+- [Pyeoskit](../README.md#pyflonkit-index) / [Modules](../MODULES.md#pyflonkit-modules) / [Pysrc](index.md#pysrc) / Utils
     - [buyram](#buyram)
     - [buyrambytes](#buyrambytes)
     - [create_account_on_chain](#create_account_on_chain)

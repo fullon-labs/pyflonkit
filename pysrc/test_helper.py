@@ -5,7 +5,7 @@ test_account1 = 'ceyelqpjeeia'
 test_account2 = 'ebvjmdibybgq'
 
 def config_network():
-    from pyeoskit import config
+    from pyflonkit import config
 
 try:
     from browser import window, aio
@@ -27,7 +27,7 @@ except Exception as e:
     import os
     import sys
     import asyncio
-    from pyeoskit import wallet
+    from pyflonkit import wallet
 
     def _load_code():
         with open('code.py', 'r') as f:
@@ -64,7 +64,7 @@ def run_test():
     import sys
     import asyncio
     import argparse
-    from pyeoskit import config
+    from pyflonkit import config
     config.setup_eos_test_network()
 #    config.setup_uuos_test_network()
 

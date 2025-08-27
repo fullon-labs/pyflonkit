@@ -2,7 +2,7 @@ import json
 import json as json_
 from typing import List, Dict, Union
 
-from . import _pyeoskit
+from . import _pyflonkit
 from .exceptions import WalletException
 from .transaction import Transaction
 
@@ -34,7 +34,7 @@ def list_keys(name, psw) -> Dict[str, str]:
     pass
 
 def get_public_keys():
-    ret = _pyeoskit.wallet_get_public_keys()
+    ret = _pyflonkit.wallet_get_public_keys()
     ret = json.loads(ret)
     return ret['data']
 
@@ -48,11 +48,11 @@ def unlock(name, password):
     pass
 
 def import_key(name, wif_key, save=True):
-    ret = _pyeoskit.wallet_import(name, wif_key)
+    ret = _pyflonkit.wallet_import(name, wif_key)
     return check_result(ret)
 
 def remove_key(name, pub_key):
-    ret = _pyeoskit.wallet_remove(name, pub_key)
+    ret = _pyflonkit.wallet_remove(name, pub_key)
     return ret
 
 def sign_transaction(chain_index, trx: Union[str, dict], public_keys: List[str], chain_id: str, json=False):
@@ -66,6 +66,6 @@ def sign_transaction(chain_index, trx: Union[str, dict], public_keys: List[str],
 def sign_digest(digest: Union[bytes, str], public_key: str):
     if isinstance(digest, bytes):
         digest = digest.hex()
-    ret = _pyeoskit.wallet_sign_digest(digest, public_key)
+    ret = _pyflonkit.wallet_sign_digest(digest, public_key)
     return check_result(ret)
 

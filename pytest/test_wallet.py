@@ -4,8 +4,8 @@ import time
 import pytest
 import logging
 import hashlib
-from pyeoskit import eosapi, config, wallet
-from pyeoskit.exceptions import ChainException, WalletException
+from pyflonkit import eosapi, config, wallet
+from pyflonkit.exceptions import ChainException, WalletException
 
 logging.basicConfig(level=logging.INFO, format='%(asctime)s %(levelname)s %(lineno)d %(module)s %(message)s')
 logger=logging.getLogger(__name__)
@@ -51,7 +51,7 @@ class Test(object):
 
         # eosapi.unpack_transaction(raw)
 
-    
+
     def test_basic(self):
         mywallet = 'mywallet2'
         if os.path.exists(f'{mywallet}.wallet'):

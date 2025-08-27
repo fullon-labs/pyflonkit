@@ -6,22 +6,22 @@ import pytest
 import logging
 import hashlib
 
-from pyeoskit import ABI, _pyeoskit
+from pyflonkit import ABI, _pyflonkit
 
 logging.basicConfig(level=logging.INFO, format='%(asctime)s %(levelname)s %(lineno)d %(module)s %(message)s')
 logger=logging.getLogger(__name__)
 test_dir = os.path.dirname(__file__)
 
 
-from pyeoskit.chainapi import ChainApi
+from pyflonkit.chainapi import ChainApi
 
 class Test(object):
 
     @classmethod
     def setup_class(cls):
-        from pyeoskit import _pyeoskit
-        _pyeoskit.init()
-        cls.chain_index = _pyeoskit.new_chain_context()
+        from pyflonkit import _pyflonkit
+        _pyflonkit.init()
+        cls.chain_index = _pyflonkit.new_chain_context()
 
     @classmethod
     def teardown_class(cls):
@@ -35,16 +35,16 @@ class Test(object):
 
     def test_chain_context(self):
         #self.chain_index is 1 as chain index 0 has been allocated in __init__.py
-        r = _pyeoskit.chain_context_free(self.chain_index)
+        r = _pyflonkit.chain_context_free(self.chain_index)
         idxes = []
         for i in range(63):
-            idx = _pyeoskit.new_chain_context()
+            idx = _pyflonkit.new_chain_context()
             idxes.append(idx)
-        idx = _pyeoskit.new_chain_context()
+        idx = _pyflonkit.new_chain_context()
         assert idx == -1, 'bad return value'
         for idx in idxes:
-            _pyeoskit.chain_context_free(idx)
-        self.chain_index = _pyeoskit.new_chain_context()
+            _pyflonkit.chain_context_free(idx)
+        self.chain_index = _pyflonkit.new_chain_context()
         assert self.chain_index == 1, 'bad return value'
 
     def test_transaction(self):
@@ -57,22 +57,22 @@ class Test(object):
         chain_id = '00' * 32
         ref_block = '11' * 32
 
-        r = _pyeoskit.wallet_import("test", "5JRYimgLBrRLCBAcjHUWCYRv3asNedTYYzVgmiU4q2ZVxMBiJXL")
+        r = _pyflonkit.wallet_import("test", "5JRYimgLBrRLCBAcjHUWCYRv3asNedTYYzVgmiU4q2ZVxMBiJXL")
         assert r == '{"data":"ok"}'
 
-        r = _pyeoskit.wallet_import("test", "PVT_K1_2bfGi9rYsXQSXXTvJbDAPhHLQUojjaNLomdm3cEJ1XTzMqUt3V")
+        r = _pyflonkit.wallet_import("test", "PVT_K1_2bfGi9rYsXQSXXTvJbDAPhHLQUojjaNLomdm3cEJ1XTzMqUt3V")
         assert r == '{"data":"ok"}'
 
         idxes = []
         for i in range(1024):
-            idx = _pyeoskit.transaction_new(self.chain_index, int(time.time()) + 60, ref_block, chain_id)
+            idx = _pyflonkit.transaction_new(self.chain_index, int(time.time()) + 60, ref_block, chain_id)
             idxes.append(i)
-        idx = _pyeoskit.transaction_new(self.chain_index, int(time.time()) + 60, ref_block, chain_id)
+        idx = _pyflonkit.transaction_new(self.chain_index, int(time.time()) + 60, ref_block, chain_id)
         assert idx == -1, 'bad return'
         for idx in idxes:
-            r = _pyeoskit.transaction_free(self.chain_index, idx)
+            r = _pyflonkit.transaction_free(self.chain_index, idx)
 
-        idx = _pyeoskit.transaction_new(self.chain_index, int(time.time()) + 60, ref_block, chain_id)
+        idx = _pyflonkit.transaction_new(self.chain_index, int(time.time()) + 60, ref_block, chain_id)
         logger.info(idx)
         assert idx == 0, 'bad return value'
 
@@ -90,10 +90,10 @@ class Test(object):
             'helloworld11': 'active'
         }
         perms = json.dumps(perms)
-        _pyeoskit.transaction_add_action(self.chain_index, idx, 'eosio.token', 'transfer', transfer, perms)
-        r = _pyeoskit.transaction_sign(self.chain_index, idx, pub)
+        _pyflonkit.transaction_add_action(self.chain_index, idx, 'eosio.token', 'transfer', transfer, perms)
+        r = _pyflonkit.transaction_sign(self.chain_index, idx, pub)
         logger.info(r)
-        r = _pyeoskit.transaction_pack(self.chain_index, idx, 0)
+        r = _pyflonkit.transaction_pack(self.chain_index, idx, 0)
         logger.info(r)
         r = json.loads(r)
         logger.info(r)
@@ -101,13 +101,13 @@ class Test(object):
         logger.info(r)
 
     def test_debug(self):
-        from pyeoskit import _pyeoskit
-        _pyeoskit.set_debug_flag(False)
-        assert _pyeoskit.get_debug_flag() == False
+        from pyflonkit import _pyflonkit
+        _pyflonkit.set_debug_flag(False)
+        assert _pyflonkit.get_debug_flag() == False
 
     def test_bad_abi(self):
-        from pyeoskit import _pyeoskit
-        #_pyeoskit.set_debug_flag(False)
+        from pyflonkit import _pyflonkit
+        #_pyflonkit.set_debug_flag(False)
         with pytest.raises(Exception) as e_info:
             abi = '{\n    "version": "eosio::abi/1.1",\n '
             r = ABI.set_contract_abi("test", abi)
@@ -187,7 +187,7 @@ class Test(object):
         logger.info(unpacked_abi)
 
     def test_wallet(self):
-        from pyeoskit import wallet, eosapi
+        from pyflonkit import wallet, eosapi
         h = hashlib.sha256(b'123').hexdigest()
 
         priv = '5JRYimgLBrRLCBAcjHUWCYRv3asNedTYYzVgmiU4q2ZVxMBiJXL'
@@ -238,11 +238,11 @@ class Test(object):
         "variants": [],
         "abi_extensions": [],
         "error_messages": []
-    }        
+    }
 '''
         r = ABI.set_contract_abi(self.chain_index, "test", abi)
         args = {
-            "a": "hello", 
+            "a": "hello",
             "b": "aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa",
             "c": "aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa"
         }

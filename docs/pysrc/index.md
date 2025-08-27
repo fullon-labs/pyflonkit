@@ -2,7 +2,7 @@
 
 > Auto-generated documentation for [pysrc](https://github.com/fullon-labs/pyflonkit/blob/master/pysrc/__init__.py) module.
 
-- [Pyeoskit](../README.md#pyeoskit-index) / [Modules](../MODULES.md#pyeoskit-modules) / Pysrc
+- [Pyeoskit](../README.md#pyflonkit-index) / [Modules](../MODULES.md#pyflonkit-modules) / Pysrc
     - Modules
         - [Abi](ABI.md#abi)
         - [Block Log](block_log.md#block-log)
