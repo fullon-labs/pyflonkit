@@ -21,7 +21,7 @@ files = [
  f'pyeoskit-{version}-cp37-cp37m-macosx_10_15_x86_64.whl',
 ]
 
-url = f'https://github.com/learnforpractice/pyeoskit/releases/download/v{version}/'
+url = f'https://github.com/fullon-labs/pyflonkit/releases/download/v{version}/'
 for f in files:
     count = 60*60/10
     while True:
